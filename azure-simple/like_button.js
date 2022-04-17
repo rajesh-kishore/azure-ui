@@ -10,7 +10,15 @@ class LikeButton extends React.Component {
 
   render() {
     if (this.state.liked) {
-      return 'You liked this.';
+
+fetch("https://trailrk2functionapp.azurewebsites.net/api/httptriggerjava1?name=rajesh kishore", {
+  "method": "GET"
+})
+.then(response => response.json())
+.catch(err => { console.log(err); 
+});
+
+      return response;
     }
 
     return e(
