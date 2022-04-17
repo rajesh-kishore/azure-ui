@@ -18,11 +18,11 @@ fetch("https://trailrk2functionapp.azurewebsites.net/api/httptriggerjava1?name=r
 })
 .then(response => response.text())
 .then(response => {
-  return response 
+  this.setState({ testVariable: response }) 
 });
 
 
-      return "just";
+      return this.testVariable;
     }
 
     return e(
