@@ -19,8 +19,6 @@ fetch("https://trailrk2functionapp.azurewebsites.net/api/httptriggerjava1?name=r
 .then(response => response.json())
 .then(response => {
   return response 
-})
-.catch(err => { console.log(err); 
 });
 
 
