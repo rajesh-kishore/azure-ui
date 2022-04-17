@@ -16,7 +16,7 @@ constructor(props) {
 fetch("https://trailrk2functionapp.azurewebsites.net/api/httptriggerjava1?name=rajesh kishore", {
   "method": "GET"
 })
-.then(response => response.json())
+.then(response => response.text())
 .then(response => {
   return response 
 });
