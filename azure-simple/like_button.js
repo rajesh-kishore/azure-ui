@@ -18,17 +18,13 @@ fetch("https://trailrk2functionapp.azurewebsites.net/api/httptriggerjava1?name=r
 })
 .then(response => response.json())
 .then(response => {
-  this.setState({
-    testVariable: response
-  })
+  return response 
 })
 .catch(err => { console.log(err); 
 });
 
-console.log(this.testVarible);
-console.log("h");
 
-      return this.testVarible;
+      return "just";
     }
 
     return e(
