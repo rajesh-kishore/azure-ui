@@ -3,7 +3,9 @@
 const e = React.createElement;
 
 class LikeButton extends React.Component {
-  constructor(props) {
+ 
+state = { testVarible: "this is a test" }; 
+constructor(props) {
     super(props);
     this.state = { liked: false };
   }
@@ -15,10 +17,11 @@ fetch("https://trailrk2functionapp.azurewebsites.net/api/httptriggerjava1?name=r
   "method": "GET"
 })
 .then(response => response.json())
+.then ( this.setState({ testVarible: response }))
 .catch(err => { console.log(err); 
 });
 
-      return response;
+      return this.testVarible;
     }
 
     return e(
