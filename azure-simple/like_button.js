@@ -16,7 +16,6 @@ constructor(props) {
 fetch("https://trailrk2functionapp.azurewebsites.net/api/httptriggerjava1?name=rajesh kishore", {
   "method": "GET"
 })
-.then(response => response.json())
 .then ( this.setState({ testVarible: response.json() }))
 .catch(err => { console.log(err); 
 });
